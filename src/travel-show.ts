@@ -3,7 +3,7 @@ import {
     CORE_DIRECTIVES
 } from 'angular2/angular2';
 
-import { Travel } from 'dist/travel'
+import { Travel } from './travel'
 
 
 @Component({

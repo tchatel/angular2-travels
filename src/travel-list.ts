@@ -6,9 +6,9 @@ import {
     ROUTER_DIRECTIVES
 } from 'angular2/router';
 
-import { Travel } from 'dist/travel'
-import { TravelManager } from 'dist/travel-manager'
-import { TravelShow } from 'dist/travel-show'
+import { Travel } from './travel'
+import { TravelManager } from './travel-manager'
+import { TravelShow } from './travel-show'
 
 
 @Component({
@@ -50,11 +50,11 @@ export class TravelList {
     constructor(public cm: TravelManager) {
         this.travels = this.cm.list;
     }
-    select(travel) {
+    select(travel: Travel) {
         this.selectedTravel = travel;
         return false;
     }
-    remove(travel) {
+    remove(travel: Travel) {
         this.cm.remove(travel);
         return false;
     }

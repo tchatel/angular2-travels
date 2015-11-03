@@ -5,14 +5,14 @@ import {
     Http
 } from 'angular2/http';
 
-import { Travel } from 'dist/travel'
+import { Travel } from './travel'
 
 
 export class TravelManager {
     list: Travel[] = [];
     constructor() {
     }
-    find(id): Travel {
+    find(id: string): Travel {
         return this.list.filter(c => c.id == id)[0];
     }
     remove(travel: Travel) {

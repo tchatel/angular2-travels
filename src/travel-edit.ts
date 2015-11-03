@@ -7,8 +7,8 @@ import {
     RouteParams
 } from 'angular2/router';
 
-import { Travel } from 'dist/travel'
-import { TravelManager } from 'dist/travel-manager'
+import { Travel } from './travel'
+import { TravelManager } from './travel-manager'
 
 
 @Component({

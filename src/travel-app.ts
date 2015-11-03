@@ -15,9 +15,9 @@ import {
     HTTP_PROVIDERS
 } from 'angular2/http';
 
-import { TravelManager, SampleTravelManager } from 'dist/travel-manager'
-import { TravelList } from 'dist/travel-list'
-import { TravelEdit } from 'dist/travel-edit'
+import { TravelManager, SampleTravelManager } from './travel-manager'
+import { TravelList } from './travel-list'
+import { TravelEdit } from './travel-edit'
 
 
 @RouteConfig([
