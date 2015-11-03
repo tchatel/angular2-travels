@@ -1,0 +1,46 @@
+
+body {
+    margin: 10px auto 10px auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 900px;
+}
+
+h1 {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 1.7em;
+    font-weight: 100;
+    text-align: center;
+    margin: 0;
+}
+h2 {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 1.3em;
+    font-weight: 100;
+    line-height: 1.5;
+    color: #666;
+    margin: 5px 0 5px 0;
+}
+
+table {
+    width: 100%;
+}
+
+td.label {
+    width: 25%;
+    text-align: right;
+    color: #555;
+}
+
+.pure-table td, .pure-table th {
+    padding: 0.3em 1em;
+}
+
+table#travel-list img {
+    width: 60px;
+    height: 45px;
+}
+table#travel-show img {
+    width: 400px;
+    height: 300px;
+}
