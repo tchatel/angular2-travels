@@ -1,9 +1,3 @@
-import {
-    Injectable
-} from 'angular2/angular2';
-import {
-    Http
-} from 'angular2/http';
 
 import { Travel } from './travel'
 
