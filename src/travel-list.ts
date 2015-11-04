@@ -48,15 +48,15 @@ import { TravelShow } from './travel-show'
 export class TravelList {
     travels: Travel[];
     selectedTravel: Travel;
-    constructor(public cm: TravelManager) {
-        this.travels = this.cm.list;
+    constructor(public tm: TravelManager) {
+        this.travels = this.tm.list;
     }
     select(travel: Travel) {
         this.selectedTravel = travel;
         return false;
     }
     remove(travel: Travel) {
-        this.cm.remove(travel);
+        this.tm.remove(travel);
         return false;
     }
 }

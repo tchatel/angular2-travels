@@ -39,7 +39,7 @@ import { TravelManager } from './travel-manager'
 })
 export class TravelEdit {
     travel: Travel;
-    constructor(cm: TravelManager, params: RouteParams) {
-        this.travel = cm.find(params.get('id'));
+    constructor(tm: TravelManager, params: RouteParams) {
+        this.travel = tm.find(params.get('id'));
     }
 }
