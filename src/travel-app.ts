@@ -37,6 +37,7 @@ export class TravelApp {
     }
 }
 
+
 bootstrap(TravelApp, [
     provide(TravelManager, {useClass: SampleTravelManager}),
     HTTP_PROVIDERS,
