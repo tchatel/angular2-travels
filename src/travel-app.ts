@@ -17,12 +17,10 @@ import {
 
 import { TravelManager, SampleTravelManager } from './travel-manager'
 import { TravelList } from './travel-list'
-import { TravelEdit } from './travel-edit'
 
 
 @RouteConfig([
     { path: '/',            component: TravelList, as: 'List' },
-    { path: '/edit/:id',    component: TravelEdit, as: 'Edit' }
 ])
 @Component({
     selector: 'travel-app',

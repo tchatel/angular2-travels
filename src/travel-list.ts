@@ -31,9 +31,6 @@ import { TravelShow } from './travel-show'
                         <a href (click)="select(travel)" class="pure-button">
                             <i class="fa fa-caret-square-o-down"></i> Show
                         </a>
-                        <a href [router-link]="['/Edit', {id: travel.id}]" class="pure-button">
-                            <i class="fa fa-pencil-square-o"></i> Edit
-                        </a>
                         <a href (click)="remove(travel)" class="pure-button">
                             <i class="fa fa-trash-o"></i> Remove
                         </a>
