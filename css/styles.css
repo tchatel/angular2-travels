@@ -26,25 +26,9 @@ table {
     width: 100%;
 }
 
-td.label {
-    width: 25%;
-    text-align: right;
-    color: #555;
-}
-
 .pure-table td, .pure-table th {
     padding: 0.3em 1em;
 }
 
-table#travel-list img {
-    width: 60px;
-    height: 45px;
-}
-table#travel-show img {
-    width: 400px;
-    height: 300px;
-}
 
-.old {
-    color: brown;
-}
+
