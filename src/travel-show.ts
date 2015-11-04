@@ -37,8 +37,7 @@ import { Travel } from './travel'
     inputs: ['travel']
 })
 export class TravelShow {
+    travel: Travel;
     constructor() {
     }
-
-    travel: Travel;
 }

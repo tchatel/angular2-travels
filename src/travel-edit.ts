@@ -35,12 +35,11 @@ import { TravelManager } from './travel-manager'
             </fieldset>
         </form>
     `,
-    directives: [FORM_DIRECTIVES, ROUTER_DIRECTIVES],
-    inputs: ['travel']
+    directives: [FORM_DIRECTIVES, ROUTER_DIRECTIVES]
 })
 export class TravelEdit {
+    travel: Travel;
     constructor(cm: TravelManager, params: RouteParams) {
         this.travel = cm.find(params.get('id'));
     }
-    travel: Travel;
 }

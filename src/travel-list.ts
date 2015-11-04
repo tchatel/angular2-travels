@@ -46,6 +46,8 @@ import { TravelShow } from './travel-show'
     directives: [CORE_DIRECTIVES, ROUTER_DIRECTIVES, TravelShow]
 })
 export class TravelList {
+    travels: Travel[];
+    selectedTravel: Travel;
     constructor(public cm: TravelManager) {
         this.travels = this.cm.list;
     }
@@ -57,6 +59,4 @@ export class TravelList {
         this.cm.remove(travel);
         return false;
     }
-    travels: Travel[];
-    selectedTravel: Travel;
 }
