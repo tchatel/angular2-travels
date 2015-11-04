@@ -10,6 +10,15 @@ import { TravelShow } from './travel-show'
 @Component({
     selector: 'travel-list',
     template: `
+        <style>
+            table#travel-list img {
+                width: 60px;
+                height: 45px;
+            }
+            table#travel-list .old {
+                color: brown;
+            }
+        </style>
         <h2>Travels List:</h2>
         <table class="pure-table pure-table-horizontal" id="travel-list">
             <thead>
