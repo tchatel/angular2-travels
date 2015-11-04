@@ -1,8 +1,10 @@
 import {
     bootstrap,
+    provide,
     Component
 } from 'angular2/angular2';
 
+import { TravelManager, SampleTravelManager } from './travel-manager'
 import { TravelList } from './travel-list'
 
 
@@ -20,6 +22,8 @@ export class TravelApp {
 }
 
 
-bootstrap(TravelApp, []);
+bootstrap(TravelApp, [
+    provide(TravelManager, {useClass: SampleTravelManager})
+]);
 
 
