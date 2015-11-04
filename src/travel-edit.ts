@@ -13,7 +13,6 @@ import { TravelManager } from './travel-manager'
 
 @Component({
     selector: 'travel-edit',
-    viewBindings: [],
     template: `
         <h2>Edit travel: {{travel.place}}</h2>
         <form class="pure-form pure-form-aligned">

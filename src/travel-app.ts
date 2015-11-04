@@ -26,7 +26,6 @@ import { TravelEdit } from './travel-edit'
 ])
 @Component({
     selector: 'travel-app',
-    viewBindings: [],
     template: `
         <h1>Angular 2 : Sample Travels Application</h1>
         <router-outlet></router-outlet>

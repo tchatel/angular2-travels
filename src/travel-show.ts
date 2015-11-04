@@ -8,7 +8,6 @@ import { Travel } from './travel'
 
 @Component({
     selector: 'travel-show',
-    viewBindings: [],
     template: `
         <div *ng-if="travel">
             <h2>Travel details:</h2>

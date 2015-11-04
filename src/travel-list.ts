@@ -13,7 +13,6 @@ import { TravelShow } from './travel-show'
 
 @Component({
     selector: 'travel-list',
-    viewBindings: [],
     template: `
         <h2>Travels List:</h2>
         <table class="pure-table pure-table-horizontal" id="travel-list">
