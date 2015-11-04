@@ -27,7 +27,7 @@ import { TravelManager } from './travel-manager'
                 </div>
                 <div class="pure-control-group">
                     <label for="phone">Year</label>
-                    <input id="phone" type="text" [(ng-model)]="travel.year"/>
+                    <input id="phone" type="number" [(ng-model)]="travel.year"/>
                 </div>
                 <div class="pure-controls">
                     <a [router-link]="['/List']" class="pure-button pure-button-primary">Return to list</a>

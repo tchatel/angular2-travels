@@ -24,7 +24,7 @@ import { TravelShow } from './travel-show'
             <tbody>
                 <tr *ng-for="#travel of travels">
                     <td><img src="img/{{travel.img || 'none.jpg'}}"/></td>
-                    <td [style.color]="travel.year?'green':'red'">{{travel.place}}</td>
+                    <td [ng-class]="{old: travel.isOld()}">{{travel.place}}</td>
                     <td>{{travel.country}}</td>
                     <td>{{travel.year}}</td>
                     <td>
