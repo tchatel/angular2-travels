@@ -11,9 +11,6 @@ import {
     HashLocationStrategy,
     APP_BASE_HREF
 } from 'angular2/router';
-import {
-    HTTP_PROVIDERS
-} from 'angular2/http';
 
 import { TravelManager, SampleTravelManager } from './travel-manager'
 import { TravelList } from './travel-list'
@@ -39,7 +36,6 @@ export class TravelApp {
 
 bootstrap(TravelApp, [
     provide(TravelManager, {useClass: SampleTravelManager}),
-    HTTP_PROVIDERS,
     ROUTER_PROVIDERS,
     provide(LocationStrategy, {useClass: HashLocationStrategy}),
     provide(APP_BASE_HREF, {useValue: '/'})
