@@ -1,3 +1,4 @@
+
 export class Travel {
     constructor(
         public id: string,
