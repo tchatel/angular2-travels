@@ -21,7 +21,7 @@ import { TravelEdit } from './travel-edit'
 
 
 @RouteConfig([
-    {path: '/',             component: TravelList, as: 'List'},
+    { path: '/',            component: TravelList, as: 'List' },
     { path: '/edit/:id',    component: TravelEdit, as: 'Edit' }
 ])
 @Component({
