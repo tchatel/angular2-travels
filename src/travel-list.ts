@@ -2,9 +2,6 @@ import {
     Component,
     CORE_DIRECTIVES
 } from 'angular2/angular2';
-import {
-    ROUTER_DIRECTIVES
-} from 'angular2/router';
 
 import { Travel } from './travel'
 import { TravelManager } from './travel-manager'
@@ -40,7 +37,7 @@ import { TravelShow } from './travel-show'
         </table>
         <travel-show [travel]="selectedTravel"></travel-show>
     `,
-    directives: [CORE_DIRECTIVES, ROUTER_DIRECTIVES, TravelShow]
+    directives: [CORE_DIRECTIVES, TravelShow]
 })
 export class TravelList {
     travels: Travel[];

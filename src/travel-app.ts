@@ -3,32 +3,18 @@ import {
     provide,
     Component
 } from 'angular2/angular2';
-import {
-    ROUTER_DIRECTIVES,
-    RouteConfig,
-    ROUTER_PROVIDERS,
-    LocationStrategy,
-    HashLocationStrategy,
-    APP_BASE_HREF
-} from 'angular2/router';
-import {
-    HTTP_PROVIDERS
-} from 'angular2/http';
 
 import { TravelManager, SampleTravelManager } from './travel-manager'
 import { TravelList } from './travel-list'
 
 
-@RouteConfig([
-    { path: '/',            component: TravelList, as: 'List' },
-])
 @Component({
     selector: 'travel-app',
     template: `
         <h1>Angular 2 : Sample Travels Application</h1>
-        <router-outlet></router-outlet>
+        <travel-list></travel-list>
     `,
-    directives: [ROUTER_DIRECTIVES]
+    directives: [TravelList]
 })
 export class TravelApp {
     constructor() {
@@ -37,11 +23,7 @@ export class TravelApp {
 
 
 bootstrap(TravelApp, [
-    provide(TravelManager, {useClass: SampleTravelManager}),
-    HTTP_PROVIDERS,
-    ROUTER_PROVIDERS,
-    provide(LocationStrategy, {useClass: HashLocationStrategy}),
-    provide(APP_BASE_HREF, {useValue: '/'})
+    provide(TravelManager, {useClass: SampleTravelManager})
 ]);
 
 
