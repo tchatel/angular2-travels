@@ -17,7 +17,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ng-for="#travel of travels">
+        <tr>
             <td>***</td>
             <td>***</td>
             <td>***</td>
