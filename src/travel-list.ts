@@ -44,7 +44,6 @@ import { Travel } from './travel'
 })
 export class TravelList {
     travels: Travel[];
-    selectedTravel: Travel;
     constructor() {
         this.travels = [
             new Travel("SF2015", "San Francisco", "USA", 2015, "sanfrancisco.jpg"),
